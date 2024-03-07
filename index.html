@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicksort</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>~Ordenamiento Quicksort~</h1>
+        <div class="form-container">
+            <label for="number-input">Ingresa números (separados por comas):</label>
+            <input type="text" id="number-input" placeholder="Ejemplo: 5,3,8,1,7">
+            <br>
+            <label for="order-select">Selecciona el orden:</label>
+            <select id="order-select">
+                <option value="noSelec">Seleccione Orden</option>
+                <option value="asc">Ascendente</option>
+                <option value="desc">Descendente</option>
+            </select>
+            <br>
+            <button onclick="sortNumbers()">Ordenar</button>
+        </div>
+        <p id="result-container"></p>
+    </div>
+    
+    <script src="js/quicksort.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url(fondoQui.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 8px;
+    border: 5px solid #0990de;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: center;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 3px; /*redondear esquinas*/
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+select {
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px; /*redondear esquinas*/
+}
+button {
+    background-color: #1c1c1c;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Agrega una transición suave al cambio de color */
+    animation: floatButton 1s infinite alternate; /* Agrega un efecto de flotación al botón */ 
+    border-radius: 15px; /*redondear esquinas*/
+}
+
+select:hover, button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+@keyframes floatButton {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+}
